@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Aportes FIC</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <!--sidebar-->
+
+    <nav>
+        <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name">FIC</span>
+        </div>
+
+        <div class="sidebar">
+            <div class="logo img">
+                <img src="../img/logo sena.svg">
+            </div>
+
+            <div class="sidebar-content">
+                <ul class="lists">
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <i class='bx bxs-dashboard'></i>
+                            <span class="link">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <i class="material-symbols-outlined">account_balance</i>
+                            <span class="link">Empresas</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="calculoFIC.html" class="nav-link">
+                            <i class="material-symbols-outlined">calculate</i>
+                            <span class="link">Calculo Fic</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <i class="material-symbols-outlined">attach_money</i>
+                            <span class="link">Intereses</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <i class="material-symbols-outlined">person</i>
+                            <span class="link">Usuarios</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <i class="material-symbols-outlined">logout</i>
+                            <span class="link">Salir</span>
+                        </a>
+                    </li>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <section class="overlay"></section>
+
+
+
+    <!--calculo fic-->
+
+    <div class="container-contenido">
+        <div class="calculo">
+            <form action="#">
+                <h2>Calcular gastos mensuales y por empleado</h2>
+                <div class="input-group">
+                    <label for="numTrabajadores">Numero de Trabajadores</label>
+                    <br>
+                    <input class="numero" type="text" id="NumTrabajadores" placeholder="Ingrese un número">
+                </div>
+                <button class="calcular">Calcular</button>
+            </form>
+        </div>
+        <div class="show-calculo">
+            <table class="mensual" border="3px">
+                <tr>
+                    <th>Mensual</th>
+                    <td>$0.00 cop</td>
+                </tr>
+            </table>
+            <table class="empleado" border>
+                <tr>
+                    <th>Empleado</th>
+                    <td>$0.00 cop</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!--Librerias-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="../JS/Navbar.js"></script>
+</body>
+
+</html>
