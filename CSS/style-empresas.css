@@ -130,62 +130,17 @@ nav {
     /*responsive*/
 
 @media only screen and (max-width: 1200px) {
-    .container-contenido{
-      width: 80%;
-      margin: 10% auto;
-      overflow: auto;
-    }
-  
-    .input-group{
-      margin: 20px auto;
-      margin-bottom: 10px;
-      overflow: auto;
-      width: auto;
-    }
+
   }
   
   @media only screen and (max-width: 990px) {
-    .container-contenido{
-      width: 80%;
-      margin: 10% auto;
-      overflow: auto;
-    }
-  
-    .input-group{
-      margin: 20px auto;
-      margin-bottom: 10px;
-      overflow: auto;
-      width: auto;
-    }
-  
+ 
   }
   
   @media only screen and (max-width: 768px) {
-    .container-contenido{
-      width: 80%;
-      margin: 10% auto;
-      overflow: auto;
-    }
-  
-    .input-group{
-      margin: 20px auto;
-      margin-bottom: 10px;
-      overflow: auto;
-      width: auto;
-    }
+
   }
   
   @media only screen and (max-width: 400px) {
-    .container-contenido{
-      width: 80%;
-      margin: 10% auto;
-      overflow: auto;
-    }
-  
-    .input-group{
-      margin: 20px auto;
-      margin-bottom: 10px;
-      overflow: auto;
-      width: auto;
-    }
+
   }
