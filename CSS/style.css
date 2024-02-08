@@ -258,6 +258,7 @@ nav.open ~ .overlay {
 .input-group {
   position: relative;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .input-group label {
@@ -265,6 +266,7 @@ nav.open ~ .overlay {
   font-size: 20px;
   margin-bottom: 10px;
   outline: no;
+  overflow: hidden;
 }
 
 .input-group h2 {
@@ -280,6 +282,7 @@ nav.open ~ .overlay {
   box-sizing: border-box;
   border: 1px solid var(--light-gray);
   border-radius: 15px;
+  overflow: hidden;
 }
 
 .calcular {
@@ -293,6 +296,7 @@ nav.open ~ .overlay {
   text-transform: uppercase;
   transition: 0.5s;
   transition-property: box-shadow;
+  overflow: hidden;
 }
 
 .calcular {
@@ -310,6 +314,7 @@ nav.open ~ .overlay {
   font-size: 20px;
   border: var(--black);
   padding: 20px;
+  overflow: hidden;
 }
 
 .show-calculo .mensual{
