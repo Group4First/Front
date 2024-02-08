@@ -246,6 +246,7 @@ nav.open ~ .overlay {
   margin: 10% auto;
   background-color: var(--white);
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .container-contenido h1 {
