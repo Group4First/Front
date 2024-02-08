@@ -4,7 +4,7 @@
 :root{
   --white: #fff;
   --black: #000;
-  --green: #017401;
+  --green: rgb(39, 167, 7);
   --light-gray: #636363;
   --gray: #333;
   --gray2: #707070;
@@ -117,11 +117,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .login{
-  background: rgb(39, 167, 7);
+  background: var(--green);
 }
 
 .login:hover {
-  box-shadow:0 0 20px rgb(39, 167, 7);
+  box-shadow:0 0 20px var(--green);
 }
 
 a {
