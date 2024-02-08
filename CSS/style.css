@@ -239,7 +239,7 @@ nav.open ~ .overlay {
 
 .container-contenido {
   box-shadow: 0 9px 18px var(--black);
-  padding: 100px;
+  padding: 80px;
   text-align: center;
   width: 600px;
   margin: 10% auto;
@@ -255,7 +255,6 @@ nav.open ~ .overlay {
 }
 
 .input-group {
-
   margin-bottom: 15px;
   overflow: auto;
 }
@@ -264,7 +263,7 @@ nav.open ~ .overlay {
   display: block;
   font-size: 20px;
   margin-bottom: 10px;
-  outline: no;
+  outline: none;
   overflow: auto;
 }
 
@@ -273,11 +272,10 @@ nav.open ~ .overlay {
   margin-bottom: 20px;
 }
 
-.input-group .numero {
-  width: 80%;
-  padding: 15px;
+.numero {
+  width: 60%;
   padding-left: 30px;
-  font-size: 14px;
+  font-size: 16px;
   box-sizing: border-box;
   border: 1px solid var(--light-gray);
   border-radius: 15px;
@@ -317,15 +315,10 @@ nav.open ~ .overlay {
 }
 
 .show-calculo .mensual{
-  border: var(--black);
-  border-radius: 2px solid var(--black);
   width: 80%;
-  padding: 15px;
 }
 
 .show-calculo .empleado{
-  border: var(--black);
-  border-radius: 2px solid var(--black);
   width: 80%;
 }
 
@@ -374,3 +367,66 @@ nav.open ~ .overlay {
     padding: 20px;
     max-width: 300px;
   }}
+
+  /*responsive*/
+
+@media only screen and (max-width: 1200px) {
+  .container-contenido{
+    width: 80%;
+    margin: 10% auto;
+    overflow: auto;
+  }
+
+  .input-group{
+    margin: 20px auto;
+    margin-bottom: 10px;
+    overflow: auto;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .container-contenido{
+    width: 80%;
+    margin: 10% auto;
+    overflow: auto;
+  }
+
+  .input-group{
+    margin: 20px auto;
+    margin-bottom: 10px;
+    overflow: auto;
+    width: auto;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .container-contenido{
+    width: 80%;
+    margin: 10% auto;
+    overflow: auto;
+  }
+
+  .input-group{
+    margin: 20px auto;
+    margin-bottom: 10px;
+    overflow: auto;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container-contenido{
+    width: 80%;
+    margin: 10% auto;
+    overflow: auto;
+  }
+
+  .input-group{
+    margin: 20px auto;
+    margin-bottom: 10px;
+    overflow: auto;
+    width: auto;
+  }
+}
