@@ -4,7 +4,7 @@
 :root{
   --white: #fff;
   --black: #000;
-  --green: #03f40f;
+  --green: #017401;
   --light-gray: #636363;
   --gray: #333;
   --gray2: #707070;
@@ -300,7 +300,7 @@ nav.open ~ .overlay {
 }
 
 .calcular {
-  background: var(--white);
+  background: var(--green);
   width: 150px;
 }
 
