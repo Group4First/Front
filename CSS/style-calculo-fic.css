@@ -287,15 +287,16 @@ nav {
     }
   
     .input-group{
-      margin: 20px auto;
+      margin: 10% auto;
       margin-bottom: 10px;
       overflow: auto;
       width: auto;
     }
 
     .calcular{
-      width: 30%;
-      font-size: 12px;
+      margin: 10% auto;
+      width: auto;
+      font-size: 8px;
       border-radius: 10px;
     }
 
