@@ -174,12 +174,10 @@ nav {
   }
   
   .calcular {
-    padding: 20px 20px;
     border: none;
     font-size: 17px;
     color: var(--white);
     border-radius: 10px;
-    letter-spacing: 2px;
     font-weight: 500;
     text-transform: uppercase;
     transition: 0.5s;
