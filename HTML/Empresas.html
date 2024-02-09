@@ -1,109 +1,177 @@
 <!DOCTYPE html>
-<!-- Coding by CodingLab | www.codinglabweb.com-->
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="../CSS/style-empresas.css" />
-
-  <!-- Boxicons CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tabla</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style-empresas.css">
+     <!-- Boxicons CSS -->
   <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
-  <nav>
-    <div class="logo">
-      <i class="bx bx-menu menu-icon"></i>
-      <span class="logo-name">FIC</span>
-    </div>
+    <nav>
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+        </div>
+    
+        <div class="sidebar">
+          <div class="logo img">
+            <img src="../img/logo sena.svg">
+          </div>
+    
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="material-symbols-outlined">dashboard</i>
+                  <span class="link">Dashboard</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="material-symbols-outlined">account_balance</i>
+                  <span class="link">Empresas</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="calculoFIC.html" class="nav-link">
+                  <i class="material-symbols-outlined">calculate</i>
+                  <span class="link">Calculo Fic</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="material-symbols-outlined">attach_money</i>
+                  <span class="link">Intereses</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="material-symbols-outlined">person</i>
+                  <span class="link">Usuarios</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="Index.html" class="nav-link">
+                  <i class="material-symbols-outlined">logout</i>
+                  <span class="link">Salir</span>
+                </a>
+              </li>
+          </div>
+        </div>
+        </div>
+      </nav>
+      <section class="overlay"></section>
 
-    <div class="sidebar">
-      <div class="logo img">
-        <img src="../img/logo sena.svg">
-      </div>
-
-      <div class="sidebar-content">
-        <ul class="lists">
-          <li class="list">
-            <a href="#" class="nav-link">
-              <i class='bx bxs-dashboard'></i>
-              <span class="link">Dashboard</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" class="nav-link">
-              <i class="material-symbols-outlined">account_balance</i>
-              <span class="link">Empresas</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="calculoFIC.html" class="nav-link">
-              <i class="material-symbols-outlined">calculate</i>
-              <span class="link">Calculo Fic</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" class="nav-link">
-              <i class="material-symbols-outlined">attach_money</i>
-              <span class="link">Intereses</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" class="nav-link">
-              <i class="material-symbols-outlined">person</i>
-              <span class="link">Usuarios</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="Index.html" class="nav-link">
-              <i class="material-symbols-outlined">logout</i>
-              <span class="link">Salir</span>
-            </a>
-          </li>
-      </div>
-    </div>
-    </div>
-  </nav>
-  <section class="overlay"></section>
-
-  <!--contenido-->
-
-  <div class="container">
-    <h1>Lista de Empresas</h1>
-
-    <table class="table">
-      <thead>
-        <tr>
-          <td>Nombre</td>
-          <td>Tipo Identificación</td>
-          <td>Número Identificación</td>
-          <td>Teléfono</td>
-          <td>Número Obras</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Cementos y Aceros S.A.S</td>
-          <td>CC</td>
-          <td>7725068610</td>
-          <td>3108876800</td>
-          <td>10</td>
-          <td><a href="#"><span class="material-symbols-outlined">visibility</span></a></td>
-          <td><a href="#"><span class="material-symbols-outlined">edit_square</span></a></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!--adicionales-->
-  <link rel="stylesheet"
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <h1>Lista de Empresas</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="images/search.png" alt="">
+            </div>
+            <div class="add">
+              <a href="#"><button class="add">+   Añadir</button></a>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Nombre <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Tipo Identificación <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Número Identificación <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Teléfono <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Número de Obras <span class="icon-arrow">&UpArrow;</span></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Cementos y Aceros S.A.S </td>
+                        <td> CC </td>
+                        <td>10954876123 </td>
+                        <td> 3108073800 </td>
+                        <td> 10 </td>
+                        <td><a href="#" class="material-symbols-outlined">visibility</a></td>
+                        <td><a href="#" class="material-symbols-outlined">edit_square</a></td>
+                    </tr>
+                    <tr>
+                        <td> Cementos y Aceros S.A.S </td>
+                        <td> CC </td>
+                        <td>10954876123 </td>
+                        <td> 3108073800 </td>
+                        <td> 10 </td>
+                        <td><a href="#" class="material-symbols-outlined">visibility</a></td>
+                        <td><a href="#" class="material-symbols-outlined">edit_square</a></td>
+                    </tr>
+                    <tr>
+                        <td> Constructora H10 S.A.S </td>
+                        <td> CC </td>
+                        <td>1006458942 </td>
+                        <td> 3224561800 </td>
+                        <td> 10 </td>
+                        <td><a href="#" class="material-symbols-outlined">visibility</a></td>
+                        <td><a href="#" class="material-symbols-outlined">edit_square</a></td>
+                    </tr>
+                    <tr>
+                        <td> Cementos y Aceros S.A.S </td>
+                        <td> CC </td>
+                        <td>10954876123 </td>
+                        <td> 3108073800 </td>
+                        <td> 10 </td>
+                        <td><a href="#" class="material-symbols-outlined">visibility</a></td>
+                        <td><a href="#" class="material-symbols-outlined">edit_square</a></td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td> Constructora H10 S.A.S </td>
+                        <td> CC </td>
+                        <td>1006458942 </td>
+                        <td> 3224561800 </td>
+                        <td> 20 </td>
+                        <td><a href="#" class="material-symbols-outlined">visibility</a></td>
+                        <td><a href="#" class="material-symbols-outlined">edit_square</a></td>
+                    </tr>
+                    <tr>
+                        <td> Cementos y Aceros S.A.S </td>
+                        <td> CC </td>
+                        <td>10954876123 </td>
+                        <td> 3108073800 </td>
+                        <td> 10 </td>
+                        <td><a href="#" class="material-symbols-outlined">visibility</a></td>
+                        <td><a href="#" class="material-symbols-outlined">edit_square</a></td>
+                    </tr>
+                    <tr>
+                        <td> Mi casita S.A.S </td>
+                        <td> CC </td>
+                        <td>100248796 </td>
+                        <td> 3001245986 </td>
+                        <td> 15 </td>
+                        <td><a href="#" class="material-symbols-outlined">visibility</a></td>
+                        <td><a href="#" class="material-symbols-outlined">edit_square</a></td>
+                    </tr>
+                    <tr>
+                        <td> Constructora H10 S.A.S </td>
+                        <td> CC </td>
+                        <td>1006458942 </td>
+                        <td> 3224561800 </td>
+                        <td> 10 </td>
+                        <td><a href="#" class="material-symbols-outlined">visibility</a></td>
+                        <td><a href="#" class="material-symbols-outlined">edit_square</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <script src="../JS/Navbar.js"></script>
+    <script src="Table.js"></script>
+    <script src="Navbar.js"></script>
 </body>
 
 </html>
