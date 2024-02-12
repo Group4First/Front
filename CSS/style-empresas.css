@@ -171,19 +171,8 @@ nav.open~.overlay {
 }
 
 .add {
-    font-size: 18px;
-    background-color: var(--green);
-    color: var(--black);
-    border: none !important;
-    border-radius: 10px;
-    font-weight: 500;
-    transition: 0.5s;
-    transition-property: box-shadow;
-    overflow: auto;
-}
-
-.add:hover {
-    box-shadow: 0 0 20px var(--green);
+    color: var(--green);
+    height: 40px;
 }
 
 main.table {
@@ -242,7 +231,6 @@ main.table {
     background-color: #fffb;
     margin: .8rem auto;
     border-radius: 0.6rem;
-
 }
 
 
