@@ -267,14 +267,6 @@ table {
     width: 100%;
 }
 
-td img {
-    width: 36px;
-    height: 36px;
-    margin-right: .5rem;
-    border-radius: 50%;
-
-    vertical-align: middle;
-}
 
 table,
 th,
@@ -370,4 +362,15 @@ thead th.asc span.icon-arrow {
 thead th.active,
 tbody td.active {
     color: var(--green);
+}
+
+
+.page-item .page-link{
+    color: var(--black);
+}
+
+.page-item .page-link:hover{
+    background-color: var(--green);
+    border: 0.5px solid var(--green);
+    color: var(--black);
 }
