@@ -113,8 +113,9 @@ a.sidebar-link {
 }
 
 a.sidebar-link:hover {
-    background-color: rgba(255, 255, 255, .075);
     border-left: 3px solid #3bdd7f;
+    text-decoration: none !important;
+    color: var(--black);
 }
 
 .sidebar-item {
@@ -195,7 +196,7 @@ main.table {
 }
 
 .table__header .input-group:hover {
-    width: 45%;
+    width: 45%;     
     background-color: #fff8;
     box-shadow: 0 .1rem .4rem #0002;
 }
@@ -219,10 +220,6 @@ main.table {
     background-color: #fffb;
     margin: .8rem auto;
     border-radius: 0.6rem;
-<<<<<<< Updated upstream
-=======
-    
->>>>>>> Stashed changes
 }
 
 
