@@ -40,6 +40,7 @@ h1 {
 
 body {
   font-family: 'Poppins', sans-serif;
+  width: 100%;
 }
 
 .wrapper {
@@ -164,8 +165,6 @@ a.sidebar-link:hover {
   transform: rotate(45deg);
   transition: all .2s ease-out;
 }
-
-
 
 .Cards {
   margin: 50px;
