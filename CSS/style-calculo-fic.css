@@ -89,10 +89,10 @@ nav {
   .lists .nav-link:hover {
     background-color: var(--light-light-gray);
   }
-  .nav-link .icon {
+  .nav-link svg {
     margin-right: 14px;
     font-size: 20px;
-    color: var(--black);
+    color: var(--green);
   }
   .nav-link .link {
     font-size: 16px;
@@ -102,7 +102,7 @@ nav {
   }
   .lists .nav-link:hover .icon,
   .lists .nav-link:hover .link {
-    color: var(--black);
+    color: var(--green);
   }
   
   .nav-link .link .icon {
