@@ -138,3 +138,7 @@ nav.open ~ .overlay {
   pointer-events: auto;
 }
  
+
+.btn {
+  margin-top: 5%;
+}
