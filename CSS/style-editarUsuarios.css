@@ -1,0 +1,144 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root{
+  --white: #fff;
+  --black: #000;
+  --green: rgb(39, 167, 7);
+  --light-gray: #636363;
+  --gray: #333;
+  --gray2: #707070;
+  --light-light-gray:#cacaca;
+  --font: "Poppins", sans-serif;
+ }
+
+ /* REGISTRO DE USUARIO */
+ h4{
+  margin-top: 64px;
+  color: var(--green);
+ }
+
+ .form-group-nombre{
+  margin-top: 4%;
+ }
+
+ .form-group-docandcon{
+  margin-top: 10%;
+  width: 82%;
+ }
+
+ .form-group-correo{
+  margin-top: 5%;
+ }
+
+ input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+ /* SIDEBAR Y SUS FUNCIONES*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+.logo .menu-icon {
+  color: var(--gray);
+  font-size: 24px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+.logo img{
+  position: relative;
+  display: block;
+  width: 180px;
+  height: 100px;
+}
+
+nav .sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 260px;
+  padding: 20px 0;
+  background-color: var(--white);
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+nav.open .sidebar {
+  left: 0;
+}
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+.sidebar-content .list {
+  list-style: none;
+}
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.lists .nav-link:hover {
+  background-color: var(--light-light-gray);
+}
+.nav-link svg {
+  margin-right: 14px;
+  font-size: 20px;
+  color: var(--green);
+}
+.nav-link .link {
+  font-size: 16px;
+  margin: 6%;
+  color: var(--gray2);
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: var(--green);
+}
+
+.nav-link .link .icon {
+  margin-right: 10px; /* Ajusta el valor según tu preferencia para separar el icono de la palabra */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: var(--gray2);
+}
+nav.open ~ .overlay {
+  opacity: 0.5;
+  left: 260px;
+  pointer-events: auto;
+}
+ 
+
+.btn {
+  margin-top: 5%;
+}
