@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro usuario</title>
+    <link rel="stylesheet" href="../css/style-Registro-Empresas.css">
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--sidebar-->
+    <nav style="display: flex;">
+        <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+        </div>
+
+        <div class="sidebar">
+            <div class="logo img">
+                <img src="../img/logo sena.svg">
+            </div>
+
+            <div class="sidebar-content">
+                <ul class="lists">
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-columns-gap" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 1v3H1V1zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm14 12v3h-5v-3zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM6 8v7H1V8zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm14-6v7h-5V1zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z" />
+                            </svg>
+                            <span class="link">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-bank" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z" />
+                            </svg>
+                            <span class="link">Empresas</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="calculoFIC.html" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-calculator" viewBox="0 0 16 16">
+                                <path
+                                    d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                <path
+                                    d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                            <span class="link">Calculo Fic</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z" />
+                            </svg>
+                            <span class="link">Intereses</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-people" viewBox="0 0 16 16">
+                                <path
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+                            </svg>
+                            <span class="link">Usuarios</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z" />
+                            </svg>
+                            <span class="link">Salir</span>
+                        </a>
+                    </li>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <section class="overlay"></section>
+    <!--End Sidebar-->
+
+    <!--REGISTRO DE EMPRESAS-->
+    <div class="container-lg">
+        <h4>Registro de Empresas</h4>
+        <div class="row">
+            <!--Razon social-->
+                  <div class="form-group-razonsocial col-3">
+                    <input type="text" class="form-control" id="nombreyapellido" placeholder="Razon social">
+                  </div>
+            <!--select 1-->
+            <div class="col-md-5">
+                <div class="input-group">                    
+                    <input type="number" class="form-control" placeholder="Numero de Documento" aria-label="Recipient's username with two button addons">
+                    <button class="btn btn-outline-secondary" type="button">NIT</button>
+                    <button class="btn btn-outline-secondary" type="button">Cedula</button>
+                  </div>
+            </div>
+            <!--DV-->
+            <div class="col-md-4">
+            <div class="form-group-DV col-3">
+                <input type="text" class="form-control" id="nombreyapellido" placeholder="DV">
+              </div>
+            </div>
+            <!--Direccion-->
+            <div class="col-md-4">
+            <div class="form-group-direccion">
+                <input type="text" class="form-control" id="Direccion" placeholder="Direccion">
+              </div>
+            </div>  
+            <!--Municipio-->
+            <div class="col-md-4 ">
+                <div class="form-group-Municipio">
+                    <input type="text" class="form-control" id="Municipio" placeholder="Municipio">
+                  </div>
+                </div>          
+            <!--Telefono-->
+            <div class="col-md-4">
+                <div class="form-group-Telefono">
+                    <input type="number" class="form-control" id="Telefono" placeholder="Telefono">
+                  </div>
+                </div>
+            <!--FAX-->
+            <div class="col-md-4">
+            <div class="form-group-Fax">
+                <input type="text" class="form-control" id="Fax" placeholder="Fax">
+              </div>  
+              </div>          
+            <!--select 2-->
+            <div class="col-md-4">
+            <select class="form-select" id="" aria-label="Default select example">
+                <option selected>Actividad economico / C.I.I.U</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <!--Correo Electrónico-->
+            <div class="col-md-4">
+                <div class="form-group-correo">
+                    <input type="email" class="form-control" id="nombreyapellido" placeholder="Correo">
+                  </div>
+                </div>
+            <!--Representante Legal-->
+            <div class="col-md-4">
+                <div class="form-group-Rlegal">
+                    <input type="text" class="form-control" id="Represetante" placeholder="Representante legal">
+                  </div>
+                </div> 
+            <!--Cedula R.P-->
+            <div class="col-md-4 ">
+                <div class="form-group-Cedula">
+                    <input type="number" class="form-control" id="Cedula" placeholder="Cedula R.P">
+                  </div>
+                </div>  
+            <!--Funcionario Entrevistado-->
+            <div class="col-md-4">
+                <div class="form-group-Entrevistado">
+                    <input type="text" class="form-control" id="Entrevistado" placeholder="Entrevistado">
+                  </div>
+                </div>
+            <!--Cargo-->
+            <div class="col-md-4">
+                <div class="form-group-Cargo">
+                    <input type="text" class="form-control" id="Cargo" placeholder="Cargo">
+                  </div>
+                </div> 
+            <!--Número de Trabajadores-->
+            <div class="col-md-4">
+                <div class="form-group-Trabajadores">
+                    <input type="number" class="form-control" id="Telefono" placeholder="# de Trabajadores">
+                  </div>
+                </div>
+            <!--CONTRATO APRENDICES-->
+            <div class="col-md-4">
+                <div class="input-group" style="margin-top: 10%; margin-left: -79%;">                    
+                    <input type="text" class="form-control" placeholder="¿Obligad@ a contratar aprendices?" aria-label="Recipient's username with two button addons">
+                    <button class="btn btn-outline-secondary" type="button">SI</button>
+                    <button class="btn btn-outline-secondary" type="button">NO</button>
+                </div>
+            </div>
+            <!--Caja de Compensación-->
+            <div class="col-md-4">
+                <div class="form-group-CajaC">
+                    <input type="text" class="form-control" id="CajaC" placeholder="Caja de Compensación">
+                  </div>
+                </div>
+            <!--Efectua los pagos en-->
+            <div class="col-md-4 ">
+                <div class="form-group-Pagos">
+                    <input type="text" class="form-control" id="Pagos" placeholder="Efectua los pagos en">
+                  </div>
+                </div>  
+            <!--Escritura Constitución-->
+            <div class="col-md-4">
+                <div class="form-group-Constitucion">
+                    <input type="text" class="form-control" id="Constitución" placeholder="Constitución">
+                  </div>
+                </div>
+            <!--Notaria-->
+            <div class="col-md-4">
+                <div class="form-group-Notaria">
+                    <input type="text" class="form-control" id="Notaria" placeholder="Notaria">
+                  </div>
+                </div>
+            <!--Ciudad-->
+            <div class="col-md-4 ">
+                <div class="form-group-Ciudad">
+                    <input type="text" class="form-control" id="Ciudad" placeholder="Ciudad">
+                  </div>
+                </div>  
+            <!--Fecha-->
+            <div class="col-md-4">
+                <div class="form-group-Fecha">
+                <input type="date" class="form-control" id="Fecha" placeholder="Fecha">
+                </div>
+            </div>
+        </div>
+            <button type="button" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+              </svg> Cancelar</button>
+            
+        
+         
+              <button type="button" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+              </svg> Guardar</button>
+
+    <!--agregados-->
+    <script src="../js/Navbar.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</body>
+
+</html>
