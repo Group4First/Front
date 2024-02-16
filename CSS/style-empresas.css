@@ -319,6 +319,10 @@ tbody td.active {
     color: var(--black);
 }
 
+.titulo{
+  color: var(--green);
+}
+
 .pagination{
   margin-top: 0.8%;
 }
