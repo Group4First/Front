@@ -126,6 +126,9 @@ nav {
   }
 
   /*pagos*/
+.titulo{
+ color: var(--green);
+}
 
 main.table {
     margin: 145px auto;

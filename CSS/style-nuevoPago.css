@@ -124,3 +124,15 @@ nav {
     left: 260px;
     pointer-events: auto;
   }
+
+  /*Nuevo Pago*/
+
+  .first{
+    margin: 8%;
+    margin-left: 15%;
+  }
+
+  .titulo{
+    color: var(--green);
+    
+  }
