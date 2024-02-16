@@ -318,3 +318,7 @@ tbody td.active {
     border: 0.5px solid var(--green);
     color: var(--black);
 }
+
+.pagination{
+  margin-top: 0.8%;
+}
